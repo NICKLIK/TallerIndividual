@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerIndividual.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Taller Individual"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Taller Individual sobre los Tipos de Layouts"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Button
+                x:Name="CounterBtnStackLayoutPaginan"
+                Text="Ir a Stack Layout" 
+                SemanticProperties.Hint="Redirige a la pagina hecha con Stack Layout"
+                Clicked="GoToStackLayoutButtoned"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="CounterBtnAbsoluteLayoutPagina"
+                 Text="Ir a Absolute Layout" 
+                SemanticProperties.Hint="Redirige a la pagina hecha con Abolute Layout"
+                 Clicked="GoToAbsoluteLayoutButton"
+                 HorizontalOptions="Fill" />
+
+            <Button
+             x:Name="CounterBtnGridLayoutPagina"
+             Text="Ir a Grid Layout" 
+             SemanticProperties.Hint="Redirige a la pagina hecha con Grid Layout"
+             Clicked="GoToGridLayoutButton"
+             HorizontalOptions="Fill" />
+
+            <Button
+             x:Name="CounterBtnFlexLayoutPagina"
+             Text="Ir a Flex Layout" 
+             SemanticProperties.Hint="Redirige a la pagina hecha con Flex Layout"
+             Clicked="GoToFlexLayoutButton"
+             HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
