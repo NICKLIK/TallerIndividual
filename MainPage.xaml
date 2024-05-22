@@ -40,7 +40,7 @@
 
             <Button
              x:Name="CounterBtnGridLayoutPagina"
-             Text="Ir a Grid Layout" 
+             Text="Ir a Grid Layout"
              SemanticProperties.Hint="Redirige a la pagina hecha con Grid Layout"
              Clicked="GoToGridLayoutButton"
              HorizontalOptions="Fill" />
