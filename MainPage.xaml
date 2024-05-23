@@ -25,6 +25,13 @@
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
             <Button
+                x:Name="CounterBtnGridLayoutPagina"
+                Text="Ir a Grid Layout"
+                SemanticProperties.Hint="Redirige a la pagina hecha con Grid Layout"
+                Clicked="GoToGridLayoutButton"
+                HorizontalOptions="Fill" />
+    
+            <Button
                 x:Name="CounterBtnStackLayoutPaginan"
                 Text="Ir a Stack Layout" 
                 SemanticProperties.Hint="Redirige a la pagina hecha con Stack Layout"
@@ -32,25 +39,19 @@
                 HorizontalOptions="Fill" />
 
             <Button
+               x:Name="CounterBtnFlexLayoutPagina"
+               Text="Ir a Flex Layout" 
+               SemanticProperties.Hint="Redirige a la pagina hecha con Flex Layout"
+               Clicked="GoToFlexLayoutButton"
+               HorizontalOptions="Fill" />
+            
+            <Button
                 x:Name="CounterBtnAbsoluteLayoutPagina"
                  Text="Ir a Absolute Layout" 
                 SemanticProperties.Hint="Redirige a la pagina hecha con Abolute Layout"
                  Clicked="GoToAbsoluteLayoutButton"
                  HorizontalOptions="Fill" />
-
-            <Button
-             x:Name="CounterBtnGridLayoutPagina"
-             Text="Ir a Grid Layout"
-             SemanticProperties.Hint="Redirige a la pagina hecha con Grid Layout"
-             Clicked="GoToGridLayoutButton"
-             HorizontalOptions="Fill" />
-
-            <Button
-             x:Name="CounterBtnFlexLayoutPagina"
-             Text="Ir a Flex Layout" 
-             SemanticProperties.Hint="Redirige a la pagina hecha con Flex Layout"
-             Clicked="GoToFlexLayoutButton"
-             HorizontalOptions="Fill" />
+            
         </VerticalStackLayout>
     </ScrollView>
 

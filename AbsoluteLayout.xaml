@@ -3,10 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TallerIndividual.AbsoluteLayout"
              Title="AbsoluteLayout">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <AbsoluteLayout Margin="20">
+        <ScrollView Orientation="Vertical">
+                <VerticalStackLayout>
+                    <BoxView Color="Blue"
+                 AbsoluteLayout.LayoutBounds="0.5,0,100,25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <BoxView Color="Green"
+                 AbsoluteLayout.LayoutBounds="0,0.5,25,100"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <BoxView Color="Red"
+                 AbsoluteLayout.LayoutBounds="1,0.5,25,100"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <BoxView Color="Black"
+                 AbsoluteLayout.LayoutBounds="0.5,1,100,25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <Label Text="Absolute Layout"
+               AbsoluteLayout.LayoutBounds="0.5,0.5,110,25"
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <Button
+           x:Name="CounterBtnGridLayoutPagina"
+           Text="Ir a Grid Layout"
+         AbsoluteLayout.LayoutBounds="1, 1, -1, -1"
+           SemanticProperties.Hint="Redirige a la pagina hecha con Grid Layout"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+           Clicked="GoToGridLayoutButton" />
+                    </VerticalStackLayout>
+            </ScrollView>
+
+    </AbsoluteLayout>
 </ContentPage>
+
+

@@ -2,7 +2,6 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
 
         public MainPage()
         {
@@ -24,7 +23,7 @@
             Navigation.PushAsync(new GridLayout());
         }
 
-        private void GGoToFlexLayoutButton(object sender, EventArgs e)
+        private void GoToFlexLayoutButton(object sender, EventArgs e)
         {
             Navigation.PushAsync(new FlexLayout());
         }
@@ -33,4 +32,3 @@
 
 }
 
-¡
