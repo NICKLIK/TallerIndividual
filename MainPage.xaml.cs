@@ -8,7 +8,7 @@
             InitializeComponent();
         }
 
-        private void GoToStackLayoutButtoned(object sender, EventArgs e)
+        private void GoToStackLayoutButton(object sender, EventArgs e)
         {
             Navigation.PushAsync(new StackLayout());
         }

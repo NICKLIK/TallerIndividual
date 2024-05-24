@@ -3,10 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TallerIndividual.FlexLayout"
              Title="FlexLayout">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <FlexLayout Direction="Column" AlignItems="Start" Padding="10">
+          
+            <StackLayout Orientation="Horizontal" Margin="5">
+                <Image Source="carafeliz1.png"
+                       WidthRequest="50"
+                       HeightRequest="50">
+                    <Image.GestureRecognizers>  
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Cara Feliz 1"
+                       VerticalOptions="Center"
+                       Margin="10,0,0,0" />
+            </StackLayout>
+         
+            <StackLayout Orientation="Horizontal" Margin="5">
+                <Image Source="carafeliz2.png"
+                       WidthRequest="50"
+                       HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Cara Feliz 2"
+                       VerticalOptions="Center"
+                       Margin="10,0,0,0" />
+            </StackLayout>
+          
+            <StackLayout Orientation="Horizontal" Margin="5">
+                <Image Source="carafeliz3.png"
+                       WidthRequest="50"
+                       HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Cara Feliz 3"
+                       VerticalOptions="Center"
+                       Margin="10,0,0,0" />
+            </StackLayout>
+        </FlexLayout>
+    </ScrollView>
 </ContentPage>

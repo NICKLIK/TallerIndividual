@@ -4,9 +4,29 @@
              x:Class="TallerIndividual.StackLayout"
              Title="StackLayout">
     <VerticalStackLayout>
+       
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Texto con tamaño pequeño"
+            FontSize="Small"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Label 
+            Text="Texto con tamaño mediano"
+            FontSize="Medium"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="Texto con tamaño grande"
+            FontSize="Large"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+        <Button
+    x:Name="CounterBtnFlexLayoutPagina"
+    Text="Ir a Flex Layout" 
+    SemanticProperties.Hint="Redirige a la pagina hecha con Flex Layout"
+    Clicked="GoToFlexLayoutButton"
+    HorizontalOptions="Fill" />
     </VerticalStackLayout>
 </ContentPage>

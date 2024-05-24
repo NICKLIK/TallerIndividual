@@ -35,7 +35,7 @@
                 x:Name="CounterBtnStackLayoutPaginan"
                 Text="Ir a Stack Layout" 
                 SemanticProperties.Hint="Redirige a la pagina hecha con Stack Layout"
-                Clicked="GoToStackLayoutButtoned"
+                Clicked="GoToStackLayoutButton"
                 HorizontalOptions="Fill" />
 
             <Button
